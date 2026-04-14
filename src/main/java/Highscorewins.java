@@ -11,10 +11,17 @@ public class Highscorewins {
         String[] teams = parts[0].split(":");
         String[] scores = parts[1].split(":");
 
-        System.out.println(teams[0]);
-        System.out.println(teams[1]);
-        System.out.println(scores[0]);
-        System.out.println(scores[1]);
+        int score1 = Integer.parseInt(scores[0]);
+        int score2 = Integer.parseInt(scores[1]);
+
+        if (score1 > score2){
+        System.out.println("Winner: "+ teams[0]);}
+        else {
+            System.out.println("Winner: " + teams[1]);
+        }
+
+
+
 
 
 
